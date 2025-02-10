@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class arr{
+public class array{
     public static void main(String[] args) {
         int arr[] = new int[10];
         Scanner sc = new Scanner(System.in);
@@ -16,32 +16,32 @@ public class arr{
 
         System.out.println("\n");
 
-        // //insert operation
-        // System.out.println("Enter the position to insert:(1,2,3...): ");
-        // int pos = sc.nextInt();
-        // System.out.println("Enter the element to insert: ");
-        // int ele = sc.nextInt();
-        // size++;
-        // for(int i=size;i>pos;i--){
-        //     arr[i] = arr[i-1];
-        // }
-        // arr[pos-1] = ele;
-        // System.out.println("Elements are: ");
-        // for(int i=0;i<size;i++){
-        //     System.out.print(arr[i]+" ");
-        // }
+        //insert operation
+        System.out.println("Enter the position to insert:(1,2,3...): ");
+        int pos = sc.nextInt();
+        System.out.println("Enter the element to insert: ");
+        int ele = sc.nextInt();
+        size++;
+        for(int i=size;i>pos;i--){
+            arr[i] = arr[i-1];
+        }
+        arr[pos-1] = ele;
+        System.out.println("Elements are: ");
+        for(int i=0;i<size;i++){
+            System.out.print(arr[i]+" ");
+        }
 
         //delete operation
-        // System.out.println("Enter the position to delete:(1,2,3...): ");
-        // int pos = sc.nextInt();
-        // size--;
-        // for(int i=pos-1;i<size;i++){
-        //     arr[i] = arr[i+1];
-        // }
-        // System.out.println("Elements are: ");
-        // for(int i=0;i<size;i++){
-        //     System.out.print(arr[i]+" ");
-        // }
+        System.out.println("Enter the position to delete:(1,2,3...): ");
+        int poss = sc.nextInt();
+        size--;
+        for(int i=poss-1;i<size;i++){
+            arr[i] = arr[i+1];
+        }
+        System.out.println("Elements are: ");
+        for(int i=0;i<size;i++){
+            System.out.print(arr[i]+" ");
+        }
 
         //search operation
         System.out.println("Enter the element to search: ");
